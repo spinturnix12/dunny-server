@@ -11,7 +11,7 @@ static void fn(struct mg_connection *c, int ev, void *ev_data, void *fn_data) {
 int main(void) {
   struct mg_mgr mgr;
   mg_mgr_init(&mgr);
-  mg_http_listen(&mgr, "http://0.0.0.0:9999", fn, &mgr);
+  mg_http_listen(&mgr, "http://0.0.0.0:8888", fn, &mgr);
   for (;;) {
     mg_mgr_poll(&mgr, 1000);
   }
