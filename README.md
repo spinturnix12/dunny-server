@@ -1,5 +1,10 @@
 Команда для сборки:
 ```shell
-gcc -Wall main.c mongoose.c -o dummy-server.bin
+make
+```
+
+Команда для очистки результатов сборки:
+```shell
+make clean
 ```
 
